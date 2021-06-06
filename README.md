@@ -24,7 +24,7 @@ curl --request POST \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
   --header 'postman-token: b010a9fa-d8b6-6c51-85f5-d829eb7dc020' \
-  --data '{"hotelId":3,"rating":4.7,"review":"GOOD","isAnanymous":true,"userName":"AKG"}'
+  --data '{"hotelId":3,"rating":4.7,"review":"GOOD","isAnonymous":true,"userName":"AKG"}'
   
   
 curl --request GET \
