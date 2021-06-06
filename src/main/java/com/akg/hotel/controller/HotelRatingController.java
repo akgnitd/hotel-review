@@ -24,7 +24,8 @@ public class HotelRatingController {
 
     @PostMapping(path = "/rating", produces = "application/json", name = "Endpoint for Adding a new Rating")
     public @ResponseBody
-    ResponseEntity postRating(@RequestBody HotelRatingDTO hotelRatingDTO) {
+    ResponseEntity postRating(@RequestBody HotelRatingDTO hotelRatingDTO,
+                              @RequestHeader(value = "SOME_HEADER", required = false) String header) {
 
         ResponseDTO responseDTO;
         try {
@@ -38,7 +39,8 @@ public class HotelRatingController {
     }
 
     @GetMapping(path = "/rating/{hotelId}", name = "Endpoint for getting average Rating of Hotel")
-    public ResponseEntity getRatings(@PathVariable Integer hotelId) {
+    public ResponseEntity getRatings(@PathVariable Integer hotelId,
+                                     @RequestHeader(value = "SOME_HEADER", required = false) String header) {
         ResponseDTO responseDTO;
         float reviewAndRatings;
         try {

@@ -16,3 +16,18 @@
 	- /actuator/beans
 	
 ### Basic Swagger Implementation is present
+
+### Common APIs for Test Running
+
+curl --request POST \
+  --url http://localhost:8089/rating \
+  --header 'cache-control: no-cache' \
+  --header 'content-type: application/json' \
+  --header 'postman-token: b010a9fa-d8b6-6c51-85f5-d829eb7dc020' \
+  --data '{"hotelId":3,"rating":4.7,"review":"GOOD","isAnanymous":true,"userName":"AKG"}'
+  
+  
+curl --request GET \
+  --url http://localhost:8089/rating/2 \
+  --header 'cache-control: no-cache' \
+  --header 'postman-token: 65b242b0-45de-c2f9-6d42-34e92cf674f2'
