@@ -1,10 +1,10 @@
 # hotel-review
 
-### This is a very basic micro service with Redis, JPA connectivity 
+1. This is a very basic micro service with Redis, JPA connectivity 
 
-### Endpoints in this service can consume both XML/JSON
+2. Endpoints in this service can consume both XML/JSON
 
-### Packaging is done as a war
+3. Packaging is done as a war
 
 ### Health Metrics are provided here:
 
